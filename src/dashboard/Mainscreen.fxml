@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.MainscreenController">
+   <content>
+      <AnchorPane prefHeight="506.0" prefWidth="760.0">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="760.0" style="-fx-background-color: #3389F9;">
+               <children>
+                  <Label layoutX="34.0" layoutY="2.0" prefHeight="100.0" prefWidth="104.0" text="Hi," textFill="#f8f1f1">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name" layoutX="123.0" layoutY="14.0" prefHeight="76.0" prefWidth="455.0" text="Your name" textAlignment="CENTER" textFill="#f8f1f1">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="578.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="159.0" styleClass="dashboard-btns" stylesheets="@../design/design.css" text="View Transactions">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="578.0" layoutY="52.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="159.0" styleClass="dashboard-btns" stylesheets="@../design/design.css" text="Transfer Money">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Label layoutX="14.0" layoutY="137.0" prefHeight="52.0" prefWidth="312.0" text="Welcome back,">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="body" layoutX="191.0" layoutY="210.0" prefHeight="236.0" prefWidth="524.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Pane layoutY="447.0" prefHeight="59.0" prefWidth="760.0">
+               <children>
+                  <FontAwesomeIcon fill="#4648c7" iconName="HOME" layoutX="55.0" layoutY="33.0" size="28" />
+                  <FontAwesomeIcon fill="#4648c7" iconName="PHONE" layoutX="439.0" layoutY="33.0" size="28" />
+                  <Label layoutX="89.0" layoutY="15.0" text="Ziraat Bank,Haldia">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="478.0" layoutY="13.0" text="(024)12345678">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
